@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="analyzer-container">
+        <h2>Password Strength Analyzer</h2>
+        
+        <div class="input-group">
+            <input type="password" id="password-input" placeholder="Enter your password...">
+            <button id="toggle-visibility" class="btn-secondary">Show</button>
+        </div>
+
+        <div class="meter-container">
+            <div id="strength-meter" class="strength-meter"></div>
+        </div>
+        <div id="strength-text" class="strength-text">Strength: None</div>
+
+        <ul class="criteria-list">
+            <li id="crit-length" class="invalid"><span>✗</span> Minimum 8 characters</li>
+            <li id="crit-uppercase" class="invalid"><span>✗</span> Uppercase letter</li>
+            <li id="crit-lowercase" class="invalid"><span>✗</span> Lowercase letter</li>
+            <li id="crit-number" class="invalid"><span>✗</span> Number</li>
+            <li id="crit-symbol" class="invalid"><span>✗</span> Symbol</li>
+        </ul>
+
+        <div class="generator-section">
+            <button id="generate-btn" class="btn-primary">Generate Strong Password</button>
+            <div id="generated-password" class="generated-display hidden"></div>
+        </div>
+
+        <div class="security-tips">
+            <h3>🛡️ Security Tips</h3>
+            <p>Avoid dictionary words and personal information (like names, birthdays, or addresses).</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,48 +1,55 @@
 # Password Strength Analyzer
 
-A responsive web application that checks password security and suggests stronger passwords.
+A responsive client-side web application that evaluates password strength and generates secure password suggestions.
 
 ## Features
 
-- Password strength checker
-- Real-time criteria checklist
-- Password suggestion generator
-- Strength meter/progress bar
-- Security tips for users
-- Responsive modern UI
-- Python Flask backend
+- Live password strength meter
+- Real-time validation checklist for length, uppercase, lowercase, numbers, and symbols
+- Show/hide password toggle
+- Strong password generator with automatic analysis
+- Security tips for safer password creation
+- Responsive UI for desktop and mobile
 
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- Python Flask
 
-## Installation
+## Run Locally
 
-### Step 1: Install Flask
+This project is fully static. You can open `index.html` directly in your browser, or serve it from a local web server for the best experience.
+
+### Option 1: Open directly
+
+Open `index.html` in your browser.
+
+### Option 2: Use a local web server
 
 ```bash
-pip install flask
-```
-### Step 2: Run the Application
-```bash
-python app.py
-```
-### Step 3: Open in Browser
-```bash
-http://127.0.0.1:5000
+cd "d:\Projects\Password Strength Analyzer"
+python -m http.server 8000
 ```
 
-### Project Structure
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+<!-- ## Deploy on GitHub Pages
+
+1. Push this repository to GitHub.
+2. In GitHub, go to `Settings` → `Pages`.
+3. Select the `main` branch and the `/ (root)` folder.
+4. Save and wait for the site URL to appear. -->
+
+## Project Structure
 
 Password-Strength-Analyzer/
 │
-├── app.py
-├── templates/
-│   └── index.html
-├── static/
-│   ├── style.css
-│   └── script.js
+├── index.html
+├── script.js
+├── style.css
 └── README.md
