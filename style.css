@@ -175,3 +175,52 @@ button {
     color: #856404;
     line-height: 1.4;
 }
+
+/* Weak Password Suggestion Box Styles */
+#weak-suggestion-box {
+    background-color: #f8d7da;
+    border-left: 4px solid var(--weak);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#weak-suggestion-box p {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #721c24;
+    font-weight: bold;
+}
+
+.suggestion-row {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+}
+
+#auto-suggested-password {
+    margin-top: 0;
+    flex: 1;
+    background: #ffffff;
+    border-color: #f5c6cb;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#use-suggestion-btn {
+    white-space: nowrap;
+    background-color: var(--text-main);
+    color: white;
+}
+
+#use-suggestion-btn:hover {
+    background-color: #000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}

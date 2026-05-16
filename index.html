@@ -20,6 +20,14 @@
         </div>
         <div id="strength-text" class="strength-text">Strength: None</div>
 
+        <div id="weak-suggestion-box" class="hidden">
+            <p>⚠️ Password is too weak. Try this instead:</p>
+            <div class="suggestion-row">
+                <span id="auto-suggested-password" class="generated-display"></span>
+                <button id="use-suggestion-btn" class="btn-secondary">Use This</button>
+            </div>
+        </div>
+
         <ul class="criteria-list">
             <li id="crit-length" class="invalid"><span>✗</span> Minimum 8 characters</li>
             <li id="crit-uppercase" class="invalid"><span>✗</span> Uppercase letter</li>
